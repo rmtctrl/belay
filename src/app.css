@@ -80,8 +80,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 2px;
   display: inline-block;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 15px 25px;
   text-transform: uppercase;
 }
 
@@ -89,10 +88,6 @@ a:hover {
 .promote-btn:focus,
 .promote-btn:hover {
   background: linear-gradient(#ff894f, #bd330c);
-}
-
-.promote-form {
-  display: flex;
 }
 
 .promote-header {
@@ -106,8 +101,10 @@ a:hover {
   font-family: 'Merriweather', serif;
   font-size: 18px;
   flex: 1;
+  margin-bottom: 20px;
   margin-right: 15px;
   padding: 15px;
+  width: 100%;
 }
 
 .social {
@@ -117,4 +114,19 @@ a:hover {
 
 .mb-2 {
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .promote-btn {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  .promote-form {
+    display: flex;
+  }
+
+  .promote-input {
+    margin-bottom: 0;
+  }
 }
